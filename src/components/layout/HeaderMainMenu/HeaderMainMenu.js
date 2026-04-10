@@ -22,7 +22,7 @@ const HeaderMainMenu = () => {
     });
   }, []);
   const isActive = (href) => {
-    if (href === pathname) {
+    if (href.includes(pathname) && pathname !== "/") {
       return true;
     }
 
@@ -193,7 +193,5 @@ const HeaderMainMenu = () => {
 };
 
 HeaderMainMenu.propTypes = {};
-
-HeaderMainMenu.defaultProps = {};
 
 export default HeaderMainMenu;
