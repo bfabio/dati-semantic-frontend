@@ -32,18 +32,34 @@ export const CONTACTPAGE = [
 ];
 export const VALIDATORE = [
   { label: "Home", link: routes.explore(), id: 17 },
-  { label: "Validatore semantico", link: "", id: 18 }
+  { label: "Validatore metadati", link: "", id: 18 }
+];
+export const VALIDATORE_RESULT = [
+  { label: "Home", link: routes.explore(), id: 17 },
+  { label: "Validatore metadati", link: routes.validatore(), id: 18 },
+  { label: "Risultato", link: "", id: 19 }
+];
+export const SCHEMAEDITORLANDING = [
+  { label: "Home", link: routes.explore(), id: 20 },
+  { label: "Schema Editor", link: "", id: 21 }
+];
+export const ASSISTANTLANDING = [
+  { label: "Home", link: routes.explore(), id: 22 },
+  { label: "Schema Assistant", link: "", id: 23 }
 ];
 export const BREADCRUMBS = {
   EXPLOREPAGE: EXPLOREPAGE,
   PROJECTPAGE: PROJECTPAGE,
   VALIDATORE: VALIDATORE,
+  VALIDATORE_RESULT: VALIDATORE_RESULT,
   FAQPAGE: FAQPAGE,
   SEARCHPAGE: SEARCHPAGE,
   DETAILSPAGE: DETAILSPAGE,
   PRIVACYPAGE: PRIVACYPAGE,
   CONTACTPAGE: CONTACTPAGE,
-  LEGALNOTICES: LEGALNOTICES
+  LEGALNOTICES: LEGALNOTICES,
+  SCHEMAEDITORLANDING: SCHEMAEDITORLANDING,
+  ASSISTANTLANDING: ASSISTANTLANDING
 };
 
 export default BREADCRUMBS;

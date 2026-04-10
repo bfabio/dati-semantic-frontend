@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-const NotFound = () => {
+// import { useNavigate } from "react-router-dom";
+
+const WipPage = () => {
   useEffect(() => {
-    document.title = "Pagina non trovata - Catalogo Nazionale Dati";
+    document.title = "Lavori in corso - Catalogo Nazionale Dati";
   });
 
-  const goToHome = useNavigate();
+  // const goToHome = useNavigate();
   return (
     <div className="container mt-5 mb-5" role={"alert"}>
-      <div className="row mx-0 my-2 justify-content-center">
+      {/* <div className="row mx-0 my-2 justify-content-center">
         <div className="col-md-6 d-flex justify-content-center my-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,33 +24,37 @@ const NotFound = () => {
             />
           </svg>
         </div>
-      </div>
+      </div> */}
       <div className="row mx-0 my-2 justify-content-center">
         <div className="col-md-6 d-flex justify-content-center">
           <h1 className="my-1 text-primary-title" role="status">
-            Pagina non trovata
+            Avviso di manutenzione
           </h1>
         </div>
       </div>
       <div className="row mx-0 my-2 justify-content-center">
         <div className="col-md-6 d-flex justify-content-center">
-          <p className="my-1 fw-normal fs-4" role="status">
-            Utilizza il menu per riprendere la navigazione
+          <p className="my-1 fw-normal fs-4 text-center" role="status">
+            {`Sono in corso attività di manutenzione per l'aggiornamento del
+            Portale`}{" "}
+            <br />
+            <br />
+            Il sito sarà di nuovo raggiungibile al termine delle attività
           </p>
         </div>
       </div>
-      <div className="row mx-0 my-2 justify-content-center">
+      {/* <div className="row mx-0 my-2 justify-content-center">
         <div className="col-md-6 d-flex justify-content-center my-4">
           <button className="btn btn-primary" onClick={() => goToHome("/")}>
             Vai alla pagina iniziale
           </button>
         </div>
-      </div>
+      </div> */}
       {/* <div className={styles.abstract}>{message}</div> */}
     </div>
   );
 };
 
-NotFound.propTypes = {};
+WipPage.propTypes = {};
 
-export default NotFound;
+export default WipPage;
